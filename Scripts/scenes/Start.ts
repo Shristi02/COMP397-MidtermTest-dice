@@ -3,6 +3,7 @@ module scenes
     export class Start extends objects.Scene
     {
         // PRIVATE INSTANCE MEMBERS
+        private background:createjs.Bitmap;
         private _welcomeLabel: objects.Label;
         private _startButton: objects.Button;
 
@@ -24,6 +25,7 @@ module scenes
         // PUBLIC METHODS
         public Start(): void 
         {
+            this.background = new createjs.Bitmap("./Assets/images/dicebackground.jpg");
              //instantiate a new Text object
             this._welcomeLabel = new objects.Label("COMP397 - Midterm Test", "40px", "Consolas", "#000000", 320, 180, true);
             // buttons

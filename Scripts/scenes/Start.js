@@ -26,6 +26,7 @@ var scenes;
         // PRIVATE METHODS
         // PUBLIC METHODS
         Start.prototype.Start = function () {
+            this.background = new createjs.Bitmap("./Assets/images/dicebackground.jpg");
             //instantiate a new Text object
             this._welcomeLabel = new objects.Label("COMP397 - Midterm Test", "40px", "Consolas", "#000000", 320, 180, true);
             // buttons

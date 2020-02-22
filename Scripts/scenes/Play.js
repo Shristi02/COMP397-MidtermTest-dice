@@ -38,7 +38,7 @@ var scenes;
          * @memberof Play
          */
         Play.prototype.Start = function () {
-            this.background = new createjs.Bitmap("./Assets/images/dicebackground.png");
+            this.background = new createjs.Bitmap("./Assets/images/dicebackground.jpg");
             this.addChild(this.background);
             this.dice[0] = new objects.Dice(config.Game.ASSETS.getResult("blank"), 75, 100, false);
             this.dice[1] = new objects.Dice(config.Game.ASSETS.getResult("blank"), 375, 100, false);
